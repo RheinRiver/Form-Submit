@@ -1,0 +1,77 @@
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Authentication Identity</title>
+		<style>
+		#header {
+			background-color:black;
+			color:white;
+			text-align:center;
+			padding:5px;
+		}
+		#section {
+			width:100%;
+			float:left;
+			padding:10px;
+			text-align:center;			
+		}
+		#footer {
+			background-color:black;
+			color:white;
+			clear:both;
+			text-align:center;
+			padding:5px; 
+		}
+		
+		.login-button { /* 按钮美化 */
+			width: 50px; /* 宽度 */
+			height: 30px; /* 高度 */
+			border-width: 1px; /* 边框宽度 */
+			border-radius: 3px; /* 边框半径 */
+			background: white; /* 背景颜色 */
+			cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+			outline: none; /* 不显示轮廓线 */
+			font-family: Microsoft YaHei; /* 设置字体 */
+			color: black; /* 字体颜色 */
+			font-size: 17px; /* 字体大小 */
+		}
+		.login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+			background: black;
+			color: white;
+		}
+		.input-set {
+			text-align:center;
+			border: 1px stolid black;
+			width: 200px;
+			height: 40px;
+			font-size: 150%;
+		}
+		</style>
+  </head>
+  <body>
+
+			
+		<div id="header">
+		<h1>身份认证</h1>
+		</div>
+
+
+
+		<div id="section">
+		<h1>请输入标识码:</h1>
+		<form action = "identity.php" method = "post">
+			<div>
+			<input class="input-set" type="text" autocomplete="off" name="id"><br><br>
+			</div>
+			<td>
+				<input class="login-button" type = "submit" value = "提交">
+				<input class="login-button" type = "reset" value = "重置">
+			</td>
+		</form>
+		</div>
+		<div id="footer">
+		Powered by YH
+		</div>
+
+  </body>
+</html>
